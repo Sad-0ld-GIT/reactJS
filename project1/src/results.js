@@ -19,7 +19,7 @@ function Results(props) {
     return (
         <>
             <h2>Results of {props.name}</h2>
-            <table>
+            <table border="1">
                 <tr>
                     <td>Physics: </td>
                     <td><b>{phy}</b></td>
