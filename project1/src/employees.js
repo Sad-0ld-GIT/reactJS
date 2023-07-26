@@ -19,16 +19,27 @@ function EmployeesData() {
         }
     ]
 
+    // function addEmployee() {
+    //     records.push(
+    //         {
+    //             "name": "neil",
+    //             "dept": "Sales",
+    //             "salary": 4000
+    //         }
+    //     )
+    //     setEmployees(records)
+    //     console.log(records)
+    // }
+
     function addEmployee() {
-        records.push(
+        setEmployees( (oldRecords) => {let newRecord = 
             {
-                "name": "neil",
-                "dept": "Sales",
-                "salary": 4000
+            "name": "neil",
+            "dept": "Sales",
+             "salary": 4000
             }
-        )
-        setEmployees(records)
-        console.log(records)
+            return [...oldRecords, newRecord]
+        })
     }
 
     let [employees, setEmployees]=useState(records)
