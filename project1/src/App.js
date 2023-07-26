@@ -9,7 +9,8 @@ import './App.css';
 // import Numbers from './numbers';
 // import Records from './records';
 // import Events from './events';
-import EmployeesData from './employees';
+// import EmployeesData from './employees';
+import DataFromWeb from './dataFromWeb';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
         <br/>
         {/* <Records/> */}
         {/* <Events/> */}
-        <EmployeesData/>
+        {/* <EmployeesData/> */}
+        <DataFromWeb/>
     </>
   );
 }
