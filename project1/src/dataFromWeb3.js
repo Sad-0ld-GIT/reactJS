@@ -2,7 +2,7 @@ import {useState} from 'react';
 
 function DataFromWeb3 () {
     let [posts, setRecords]=useState([])
-    let[comments, setComments]=useState([])
+    // let[comments, setComments]=useState([])
 
     function getDataFromResponse(data) {
         setRecords(data)
